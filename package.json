@@ -1,0 +1,37 @@
+{
+  "name": "andrey-golubov.github.io",
+  "version": "0.0.1",
+  "description": "About me (portfolio)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp",
+    "dev": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrey-golubov/andrey-golubov.github.io.git"
+  },
+  "keywords": [
+    "andrey",
+    "golubov",
+    "portfolio"
+  ],
+  "author": "Andrey Golubov <gap59113@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrey-golubov/andrey-golubov.github.io/issues"
+  },
+  "homepage": "https://github.com/andrey-golubov/andrey-golubov.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-svg-sprites": "^4.1.1",
+    "gulp-svgmin": "^1.2.4",
+    "gulp.spritesmith": "^6.5.0"
+  }
+}
