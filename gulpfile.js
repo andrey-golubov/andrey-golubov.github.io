@@ -24,7 +24,11 @@ const PATH = {
 	SASS: {
 		ENTRY: "./src/scss/main.scss",
 		SRC: "./src/scss/**/*.scss",
-		DIST: _path.join(DIST, "css")
+		DIST: _path.join(DIST, "css"),
+	},
+	JS: {
+		SRC: "./src/js/**/*.js",
+		DIST: _path.join(DIST, "js"),
 	},
 	IMG: {
 		BASE: {
@@ -42,7 +46,7 @@ const PATH = {
 				NAME: "sprite.png",
 				DIST: _path.join(DIST, "img"),
 				CSS_NAME: "sprite.scss",
-				CSS_DIST: "./src/scss/sprites"
+				CSS_DIST: "./src/scss/sprites",
 			}
 		}
 	},
@@ -66,9 +70,16 @@ gulp.task("scss", function(){
 					.pipe(browserSync.stream());
 });
 
+gulp.task("js", function(){
+	return gulp.src(PATH.JS.SRC)
+					.pipe(gulp.dest(PATH.JS.DIST))
+					.pipe(browserSync.stream());
+});
+
 gulp.task("images:base", function(){
 	return gulp.src(PATH.IMG.BASE.SRC)
-					.pipe(gulp.dest(PATH.IMG.BASE.DIST));
+					.pipe(gulp.dest(PATH.IMG.BASE.DIST))
+					.pipe(browserSync.stream());
 });
 
 gulp.task("images:sprite:png", function(){

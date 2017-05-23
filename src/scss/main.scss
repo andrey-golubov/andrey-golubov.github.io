@@ -1,0 +1,26 @@
+/**
+ * Toast grid settings
+ */
+$toast-grid-namespace: "row" !default;
+$toast-grid-column-namespace: "col" !default;
+
+$toast-col-groups: (12) !default;
+
+$toast-gutter-width: 20px !default;
+
+$toast-breakpoint-medium: 700px !default;
+$toast-breakpoint-small: 480px !default;
+
+$toast-pushes: true !default;
+$toast-pulls: true !default;
+/**
+ * Theme colors
+ */
+
+
+
+/**
+ * Over settings
+ */
+
+@import "../../bower_components/toast-css/scss/_grid.scss";
