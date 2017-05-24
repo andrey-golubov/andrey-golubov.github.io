@@ -56,7 +56,7 @@ const PATH = {
 };
 
 gulp.task("scss", function(){
-	return gulp.src(PATH.SASS.ENTRY)
+	return gulp.src(PATH.SASS.SRC)
 					.pipe(sourcemaps.init())
 					.pipe(sassGlob())
 					.pipe(sass().on('error', sass.logError))

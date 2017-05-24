@@ -1,0 +1,26 @@
+{
+  "name": "andrey-golubov.github.io",
+  "description": "About me (portfolio)",
+  "main": "gulpfile.js",
+  "authors": [
+    "Andrey Golubov <gap59113@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "andrey",
+    "golubov",
+    "portfolio"
+  ],
+  "homepage": "https://github.com/andrey-golubov/andrey-golubov.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "toast-css": "^1.1.0"
+  }
+}
